@@ -1,0 +1,7 @@
+.idea/*
+*.log
+log/*.log
+*.idea/*
+*.iml
+sinatra_code/*
+

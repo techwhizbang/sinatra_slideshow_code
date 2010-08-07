@@ -1,0 +1,6 @@
+sinatra --version 1.0.0
+builder --version 2.1.2
+haml --version 3.0.13
+erubis --version 2.6.6
+activerecord --version 2.3.5
+json --version 1.4.3
