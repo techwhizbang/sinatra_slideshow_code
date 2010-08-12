@@ -36,6 +36,10 @@ end
 # Uncomment this is you want to run RSpec tests
 require 'spec/rake/spectask'
 
+# Including custom lib/tasks files
+tasks = Dir.glob(File.expand_path(File.dirname(__FILE__) + "/lib/tasks/*"))
+tasks.each { |t| require t }
+
 Spec::Rake::SpecTask.new(:spec) do |spec|
   spec.libs << 'lib' << 'spec'
   spec.spec_files = FileList['spec/**/*_spec.rb']

@@ -1,10 +1,6 @@
 require 'rubygems'
 require 'test/unit'
-require 'shoulda'
-
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'app'))
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'sinatra_code'
-
-class Test::Unit::TestCase
-end
+#Don't forget to include this to use Rack::Test
+require 'rack/test'
+#Load your application files
+require File.expand_path(File.dirname(__FILE__) + "/../init")

@@ -25,7 +25,4 @@ class StandaloneController < Sinatra::Base
     erubis :show
   end
 
-  # TODO: build an extension on Sinatra such that it recognizes the requested
-  # content type automatically like Rails respond_to { |format| ... }
-
 end

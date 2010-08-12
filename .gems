@@ -1,4 +1,8 @@
+rack --version 1.2.1
+rack-accept-media-types --version 0.9
+rack-throttle --version 0.3.0
 sinatra --version 1.0.0
+sinatra-respond_to --version 0.4.0
 builder --version 2.1.2
 haml --version 3.0.13
 erubis --version 2.6.6

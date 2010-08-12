@@ -1,6 +1,5 @@
 class CartController < Sinatra::Base
-
-
+  
   post '/' do
 
   end
