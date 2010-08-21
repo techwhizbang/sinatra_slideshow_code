@@ -5,8 +5,9 @@
 
 require File.expand_path(File.dirname(__FILE__) + "/init")
 
-set :run, false
-set :environment, :development
+use Rack::Static, :urls => ["/stylesheets", "/javascripts", "/images"], :root => "public"
+use Rack::CommonLogger
+use Rack::Lint
 
 #Rack:URLMap in action
 map "/cart" do
@@ -15,4 +16,8 @@ end
 
 map "/standalone" do
   run StandaloneController
+end
+
+map "/search" do
+  run SearchController
 end

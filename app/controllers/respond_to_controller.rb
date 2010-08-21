@@ -7,7 +7,7 @@ class RespondToController < Sinatra::Base
 
   # Note that I'd had to "configure" the views for a more Rails-like controller/view mapping
   set :views, Proc.new { File.expand_path(File.dirname(__FILE__) + "/../views/respond_to") }
-
+  
   get "/respond_to" do
     respond_to do |format|
       format.html { haml :show }

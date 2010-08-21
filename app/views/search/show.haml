@@ -1,0 +1,5 @@
+%ul.search_results
+  - @search_results.results.each do |search_result|
+    %li
+      %a{:href => search_result.design_detail_page_url}
+        %img{:src => search_result.design_url}

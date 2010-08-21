@@ -9,6 +9,10 @@ require 'json'
 require 'net/http'
 require 'rack'
 require 'rack/throttle'
+require 'cafepress-search'
+
+set :run, false
+set :environment, :development
 
 models = Dir.glob(File.expand_path(File.dirname(__FILE__) + "/app/models/*"))
 helpers = Dir.glob(File.expand_path(File.dirname(__FILE__) + "/app/helpers/*"))
