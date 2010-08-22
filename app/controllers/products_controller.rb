@@ -1,4 +1,4 @@
-class CartController < Sinatra::Base
+class ProductsController < Sinatra::Base
   
   post '/' do
 

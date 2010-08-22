@@ -11,7 +11,7 @@ use Rack::Lint
 
 #Rack:URLMap in action
 map "/cart" do
-  run CartController
+  run ProductsController
 end
 
 map "/standalone" do
@@ -20,4 +20,18 @@ end
 
 map "/search" do
   run SearchController
+end
+
+map "/cookie_sessions" do
+  run CookieSessionsController
+end
+
+map "/memcache_sessions" do
+  use Rack::Session::Memcache, :servers => 'localhost:11211', :expire_at => 60 * 30
+  run MemcacheSessionsController
+end
+
+map "/memory_sessions" do
+  use Rack::Session::Pool, :expire_after => 60 * 30
+  run MemorySessionsController
 end
