@@ -31,6 +31,33 @@ ul.search_results li {
     margin: 10px;
 }
 
+div#product {
+    text-align: left;
+    float: left;
+    font-size: 1.5em;
+}
+
+div#product h1 {
+    margin: 10px 0px 10px 0px;
+}
+
+div#product div.error {
+    color: #ff0000;
+}
+
+div#product div.notice {
+    color: #009933;
+}
+
+form.standard_form label, input {
+    float: left;
+    margin: 5px;
+}
+
+form.standard_form label {
+    width: 100px;
+}
+
 img {
     color: #ffffff;
 }

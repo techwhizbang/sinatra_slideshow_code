@@ -1,0 +1,11 @@
+#product
+  - @products.each do |product|
+    %h1 Product #{product.id}
+    %label ID
+    %span #{product.id}
+    %br
+    %label Name
+    %span #{product.name}
+    %br
+    %label Description
+    %span #{product.description}

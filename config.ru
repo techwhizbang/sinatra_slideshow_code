@@ -9,8 +9,18 @@ use Rack::Static, :urls => ["/stylesheets", "/javascripts", "/images"], :root =>
 use Rack::CommonLogger
 use Rack::Lint
 
+use Rack::Cache do
+ set :verbose, true
+ set :metastore, 'memcached://localhost:11211/meta'
+ set :entitystore, 'memcached://localhost:11211/entity'
+end
+
 #Rack:URLMap in action
-map "/cart" do
+map "/product" do
+  run ProductsController
+end
+
+map "/products" do
   run ProductsController
 end
 

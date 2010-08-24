@@ -1,17 +1,22 @@
 require 'rubygems'
-require 'memcache'
-require 'rack'
+require 'net/http'
+require 'bundler'
+Bundler.setup
+
 require 'rack/throttle'
-require 'rack/session/memcache'
+require 'rack/flash'
+require 'rack'
+require 'rack/cache'
 require 'builder'
 require 'haml'
 require 'erubis'
 require 'active_record'
+require 'sqlite3'
 require 'json'
-require 'net/http'
 require 'cafepress-search'
 require 'sinatra'
 require 'sinatra/respond_to'
+require 'sinatra/cache'
 
 lib = Dir.glob(File.expand_path(File.dirname(__FILE__) + "/lib/*.rb"))
 models = Dir.glob(File.expand_path(File.dirname(__FILE__) + "/app/models/*"))

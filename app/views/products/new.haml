@@ -1,0 +1,13 @@
+#product
+  %h1 Create a product
+  .error
+    = flash[:error]
+  %br
+  %form{:id => "product_form", :method => "POST", :action => "/product/", :class => "standard_form"}
+    %label Name
+    %input{:id => "product_name", :name => "product[name]"}
+    %br
+    %label Description
+    %input{:id => "product_description", :name => "product[description]"}
+    %br
+    %input{:type => "submit", :value => "Create Product"}
