@@ -1,7 +1,7 @@
 # A sample Gemfile
 source "http://rubygems.org"
 #
-gem "memcache"
+gem "memcache-client"
 gem "rack", ">= 1.2.1"
 gem "rack-throttle", "0.3.0"
 gem "rack-flash", "0.1.1"

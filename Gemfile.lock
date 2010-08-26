@@ -18,14 +18,14 @@ dependencies:
     group: 
     - :default
     version: = 0.3.0
+  memcache-client: 
+    group: 
+    - :default
+    version: ">= 0"
   rack-cache: 
     group: 
     - :default
     version: = 0.5.2
-  memcache: 
-    group: 
-    - :default
-    version: ">= 0"
   rspec: 
     group: 
     - :testing
@@ -93,8 +93,8 @@ specs:
     version: 3.0.17
 - json: 
     version: 1.4.6
-- memcache: 
-    version: 1.2.12
+- memcache-client: 
+    version: 1.8.5
 - rack: 
     version: 1.2.1
 - rack-cache: 
@@ -117,7 +117,7 @@ specs:
     version: 0.4.0
 - sqlite3-ruby: 
     version: 1.2.5
-hash: 202ba370a467e46f00f4b09a73a5587a5ecb3c5d
+hash: 594343abe0e6098a6607ab1385e58a9f9d010096
 sources: 
 - Rubygems: 
     uri: http://rubygems.org

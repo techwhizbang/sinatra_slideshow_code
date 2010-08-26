@@ -39,11 +39,11 @@ class ProductsController < Sinatra::Base
     haml :show
   end
 
-  put "/" do
-
+  put "/:id" do
+     
   end
 
-  delete "/" do
+  delete "/:id" do
 
   end
 

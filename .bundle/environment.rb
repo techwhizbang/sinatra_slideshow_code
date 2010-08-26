@@ -174,9 +174,9 @@ end
 module Bundler
   ENV_LOADED   = true
   LOCKED_BY    = '0.9.24'
-  FINGERPRINT  = "202ba370a467e46f00f4b09a73a5587a5ecb3c5d"
+  FINGERPRINT  = "594343abe0e6098a6607ab1385e58a9f9d010096"
   HOME         = '/Users/nzalabak1/.bundle/ruby/1.8/bundler'
-  AUTOREQUIRES = {:default=>[["active_record", true], ["builder", false], ["cafepress-search", false], ["erubis", false], ["haml", false], ["json", false], ["memcache", false], ["rack", false], ["rack-cache", false], ["rack-flash", false], ["rack-throttle", false], ["sinatra", false], ["sinatra-cache", false], ["sinatra-respond_to", false], ["sqlite3-ruby", false]], :testing=>[["rack-test", false], ["spec", true]]}
+  AUTOREQUIRES = {:default=>[["active_record", true], ["builder", false], ["cafepress-search", false], ["erubis", false], ["haml", false], ["json", false], ["memcache-client", false], ["rack", false], ["rack-cache", false], ["rack-flash", false], ["rack-throttle", false], ["sinatra", false], ["sinatra-cache", false], ["sinatra-respond_to", false], ["sqlite3-ruby", false]], :testing=>[["rack-test", false], ["spec", true]]}
   SPECS        = [
         {:load_paths=>["/usr/local/lib/ruby/gems/1.8/gems/abstract-1.0.0/lib"], :loaded_from=>"/usr/local/lib/ruby/gems/1.8/specifications/abstract-1.0.0.gemspec", :name=>"abstract"},
         {:load_paths=>["/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib"], :loaded_from=>"/usr/local/lib/ruby/gems/1.8/specifications/activesupport-2.3.5.gemspec", :name=>"activesupport"},
@@ -188,7 +188,7 @@ module Bundler
         {:load_paths=>["/usr/local/lib/ruby/gems/1.8/gems/erubis-2.6.6/lib"], :loaded_from=>"/usr/local/lib/ruby/gems/1.8/specifications/erubis-2.6.6.gemspec", :name=>"erubis"},
         {:load_paths=>["/Users/nzalabak1/.bundle/ruby/1.8/gems/haml-3.0.17/lib"], :loaded_from=>"/Users/nzalabak1/.bundle/ruby/1.8/specifications/haml-3.0.17.gemspec", :name=>"haml"},
         {:load_paths=>["/Users/nzalabak1/.bundle/ruby/1.8/gems/json-1.4.6/ext/json/ext", "/Users/nzalabak1/.bundle/ruby/1.8/gems/json-1.4.6/ext", "/Users/nzalabak1/.bundle/ruby/1.8/gems/json-1.4.6/lib"], :loaded_from=>"/Users/nzalabak1/.bundle/ruby/1.8/specifications/json-1.4.6.gemspec", :name=>"json"},
-        {:load_paths=>["/Users/nzalabak1/.bundle/ruby/1.8/gems/memcache-1.2.12/lib"], :loaded_from=>"/Users/nzalabak1/.bundle/ruby/1.8/specifications/memcache-1.2.12.gemspec", :name=>"memcache"},
+        {:load_paths=>["/Users/nzalabak1/.bundle/ruby/1.8/gems/memcache-client-1.8.5/lib"], :loaded_from=>"/Users/nzalabak1/.bundle/ruby/1.8/specifications/memcache-client-1.8.5.gemspec", :name=>"memcache-client"},
         {:load_paths=>["/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.1/lib"], :loaded_from=>"/usr/local/lib/ruby/gems/1.8/specifications/rack-1.2.1.gemspec", :name=>"rack"},
         {:load_paths=>["/usr/local/lib/ruby/gems/1.8/gems/rack-cache-0.5.2/lib"], :loaded_from=>"/usr/local/lib/ruby/gems/1.8/specifications/rack-cache-0.5.2.gemspec", :name=>"rack-cache"},
         {:load_paths=>["/usr/local/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib"], :loaded_from=>"/usr/local/lib/ruby/gems/1.8/specifications/rack-flash-0.1.1.gemspec", :name=>"rack-flash"},
